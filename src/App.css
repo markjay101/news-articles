@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.body{
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.news-articles{
+  margin: 5px 100px;
+  overflow: scroll;
+}
+.news-articles::-webkit-scrollbar, .modal-container .content::-webkit-scrollbar{
+  display: none;
+}
+h1{
+  margin: 10px 0 0 100px;
+  font-size: 24px;
+}
+header{
+  display: flex;
+  align-items: center;
+  margin: 10px 100px;
+}
+.btn, .modal-container button {
+  font-size: 16px;
+  font-weight: 500;
+  width: 70px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 5px;
+  box-shadow:  0 2px 6px -3px black;
+}
+.btn--delete{
+  color: #f13c3c;
+  background-color: #f13c3c16;
+  border: 1px solid #f13c3c;
+}
+.btn--delete:active{
+  background-color: #f13c3c;
+  color: white;
+}
+.btn--publish{
+  color: #24c2e9;
+  background-color: #24c2e916;
+  border: 1px solid #24c2e9;
+}
+header input{
+  border: none;
+  width: 20rem;
+  height: 35px;
+  border-radius: 5px;
+  padding: 4px 20px;
+  box-shadow:  0 1.5px 4px -2px black;
+  margin-left: auto;
+  outline: none;
+}
+header .checkbox{
+  width: 12px;
+  height: fit-content;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+#check-all{
+  box-shadow: none;
+  margin: 0;
+  width: auto;
+}
+.card{
+  width: 98%;
+  margin: auto;
+  display: flex;
+  background-color: #f2f4f6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.card-side-nav{
+  width: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card-side-nav input{
+  margin-top: 5px;
+}
+.card-side-nav span{
+  color: black;
+}
+.material-symbols-outlined{
+  color: #0db980;
+}
+.card-article{
+  padding: 0 10px;
+}
+.article-title{
+  padding-top: 4px;
+  font-weight: bold;
+}
+.article-author-date, .article-author, .article-date, .article-content{
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+}
+.card-article .material-symbols-outlined{
+  margin: 0 5px 0 -2px;
+  font-size: 25px;
+}
+.card-article span{
+  margin: 3px 15px 0 0;
+  font-weight: 700;
+}
+.article-content .material-symbols-outlined{
+  color: #3c81f5;
+  margin-left: 15px;
+}
+.article-content button{
+  color: #3c81f5;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 300;
+  margin: -1px 0 0 -5px;
+}
+.article-content button:active{
+  text-decoration: underline;
+}
+.hashtags{
+  margin: 5px 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.hashtags span{
+  font-weight: 600;
+  height: fit-content;
+  border: 1px solid #0db980;
+  border-radius: 5px;
+  color: #0db980;
+  background-color: #0db98016;
+  padding: 4px 5px;
+  margin-left: 10px;
+}
+.overlay{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.214);
+  width: 100%;
+  height: 100%;
+}
+.modal-container{
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px 40px 0;
+  width: 70vh;
+  height: 38rem;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-container header{
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+.modal-container header button{
+  margin-left: auto;
+  border: none;
+  width: 22px;
+  height: 30px;
+  border-radius: 40%;
+}
+.modal-container header button span{
+  color: black;
+  font-size: 20px;
+  margin: 5px 0 0;
+}
+
+.modal-container p{
+  font-weight: bold;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+.modal-container header p{
+  color: black;
+  height: 50px;
+  width: 90%;
+  padding: 5px 0 0;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+}
+.modal-container .content p{
+  font-weight: normal;
+}
+.modal-container .content{
+  border: 3px dotted black;
+  padding: 10px;
+  height: 65%;
+  overflow: scroll;
+}
+.modal-container .pub-btn{
+  background-color: #24c2e9;
+  color: white;
+  border: none;
+}
+.modal-container .del-btn{
+  background-color: #f13c3c;
+  color: white;
+  border: none;
+}
+.modal-container .btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.modal-container button{
+  box-shadow: none;
+}
+.modal-container button:active{
+  background-color: #d3d5d7;
+}
+
